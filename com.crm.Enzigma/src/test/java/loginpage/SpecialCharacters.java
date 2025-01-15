@@ -17,8 +17,8 @@ public class SpecialCharacters extends Baseclass{
 	Properties prop=new Properties();
 	  FileInputStream fis=new FileInputStream("./credentials/login.properties");
 		prop.load(fis);
-		String SpecialEmail = prop.getProperty("email");
-		String SpecialPassword= prop.getProperty("password");
+		String SpecialEmail = prop.getProperty("SpecialEmail");
+		String SpecialPassword= prop.getProperty("SpecialPassword");
 	  p1.login_email(SpecialEmail);
 	  //please enter valid email pop up should be displayed
 	  p1.login_password(SpecialPassword);
