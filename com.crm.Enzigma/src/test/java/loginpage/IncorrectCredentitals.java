@@ -18,8 +18,8 @@ public class IncorrectCredentitals extends Baseclass {
 	 Properties prop=new Properties();
 	  FileInputStream fis=new FileInputStream("./credentials/login.properties");
 		prop.load(fis);
-		String IncorrectEmail = prop.getProperty("email");
-		String IncorrectPassword = prop.getProperty("password");
+		String IncorrectEmail = prop.getProperty("IncorrectEmail");
+		String IncorrectPassword = prop.getProperty("IncorrectPassword");
 	  p1.login_email(IncorrectEmail);
 	  p1.login_password(IncorrectPassword);
 	  p1.login_remembermebutton();
